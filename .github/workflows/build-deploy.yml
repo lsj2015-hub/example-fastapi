@@ -29,7 +29,7 @@ jobs:
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: pulling git repo
         uses: actions/checkout@v3
@@ -70,3 +70,8 @@ jobs:
     steps:
       - name: deploying stuff
         run: echo "going to deploy some stuff"
+      # pull our github repo
+      # install heroku cli
+      # heroku login
+      # add git remote for heroku
+      # git push heroku main
